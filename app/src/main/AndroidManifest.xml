@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gaoyang.baway.com.mvpdemo">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="gaoyang.baway.com.mvpdemo.app.MyApp"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="gaoyang.baway.com.mvpdemo.activity.UserLoginActivity" />
+        <activity android:name="gaoyang.baway.com.mvpdemo.activity.RegisterActivity" />
+        <activity android:name="gaoyang.baway.com.mvpdemo.activity.FristActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="gaoyang.baway.com.mvpdemo.activity.MainActivity">
+
+        </activity>
+
+        <activity android:name="gaoyang.baway.com.mvpdemo.activity.BaseActivity" />
+        <activity android:name="gaoyang.baway.com.mvpdemo.activity.SousouActivity" />
+        <activity android:name="gaoyang.baway.com.mvpdemo.activity.ShopListActivity" />
+        <activity android:name="gaoyang.baway.com.mvpdemo.activity.DetailPageActivity" />
+        <activity android:name="gaoyang.baway.com.mvpdemo.activity.SouSou1Activity" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="561cae6ae0f55abd990035bf" />
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="gaoyang.baway.com.mvpdemo.activity.PhotoViewActivity" />
+        <activity android:name="gaoyang.baway.com.mvpdemo.activity.SettingPage" />
+        <activity android:name="gaoyang.baway.com.mvpdemo.activity.PayActivity" />
+        <activity android:name="gaoyang.baway.com.mvpdemo.activity.FuKuanActivity" />
+        <activity android:name="gaoyang.baway.com.mvpdemo.activity.OrderActivity" />
+        <activity android:name="gaoyang.baway.com.mvpdemo.activity.UpDataNameActivity" />
+        <activity android:name="gaoyang.baway.com.mvpdemo.activity.TakeGoodsActivity" />
+        <activity android:name="gaoyang.baway.com.mvpdemo.activity.NewAddressActivity"></activity>
+    </application>
+
+</manifest>
